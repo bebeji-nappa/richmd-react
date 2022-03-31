@@ -35,3 +35,12 @@ const Editor = () => {
 
 render(<Editor />, document.getElementById('root'))
 ```
+
+## Props
+| Name | Description |
+| --- | --- |
+| `text` | To parse HTML set Markdown text. |
+| `className` | It set ClassName. |
+
+## License
+MIT
