@@ -1,6 +1,6 @@
 {
   "name": "react-speaker-board",
-  "version": "0.2.5",
+  "version": "0.0.1",
   "description": "Easily create presentation board using React.",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -16,11 +16,14 @@
   },
   "keywords": [
     "React",
-    "react-speaker-board"
+    "richmd",
+    "markdown",
+    "html",
+    "parser"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/bebeji-nappa/react-speaker-board.git"
+    "url": "https://github.com/bebeji-nappa/richmd-react.git"
   },
   "author": "nappa <masa.yanagawa721@gmail.com> (https://twitter.com/nappa_bebeji)",
   "license": "MIT",
