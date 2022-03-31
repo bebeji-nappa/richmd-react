@@ -3,8 +3,8 @@ import { richmd } from "richmd";
 import "richmd/richmd.css";
 import "./types";
 
-export const Richmd: React.VFC<RichmdProps> = ({ text }) => {
+export const Richmd: React.VFC<RichmdProps> = ({ text, className = "" }) => {
   return (
-    <div dangerouslySetInnerHTML={{__html: richmd(text)}}></div>
+    <div className={className} dangerouslySetInnerHTML={{__html: richmd(text)}}></div>
   )
 }
