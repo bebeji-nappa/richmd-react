@@ -10,6 +10,7 @@ yarn add richmd-react
 ```
 
 ## Usage
+It use `Richmd` component`.
 
 ```js
 import React, { useState } from 'react';
@@ -40,6 +41,7 @@ render(<Editor />, document.getElementById('root'))
 | Name | Description |
 | --- | --- |
 | `text` | To parse HTML set Markdown text. |
+| `id` | It set id. |
 | `className` | It set ClassName. |
 
 ## License
