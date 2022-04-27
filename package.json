@@ -1,7 +1,7 @@
 {
   "name": "richmd-react",
   "version": "0.2.0",
-  "description": "Richmd Using React.",
+  "description": "Richmd for React.",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
