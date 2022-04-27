@@ -6,7 +6,7 @@
 
 ## Install
 ```
-yarn add richmd-react
+yarn add richmd richmd-react
 ```
 
 ## Usage
@@ -16,6 +16,7 @@ It use `Richmd` component`.
 import React, { useState } from 'react';
 import { render } from 'react-dom';
 import { Richmd } from "richmd-react";
+import 'richmd/richmd.css';
 
 const Editor = () => {
   const [text, setMarkdown] = useState('');
