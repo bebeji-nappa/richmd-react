@@ -1,6 +1,6 @@
 {
   "name": "richmd-react",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "Use Richmd for React.",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -19,7 +19,8 @@
     "richmd",
     "markdown",
     "html",
-    "parser"
+    "parser",
+    "math"
   ],
   "repository": {
     "type": "git",
