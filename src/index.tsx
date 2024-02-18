@@ -1,5 +1,3 @@
-import { Richmd } from "./Richmd"
+import { Richmd } from "./Richmd";
 
-export {
-  Richmd as Richmd,
-};
+export { Richmd };

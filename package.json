@@ -6,12 +6,12 @@
   "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "lint": "yarn lint:eslint && yarn lint:prettier",
-    "lint:fix": "yarn lint:eslint:fix && yarn lint:prettier:fix",
-    "lint:eslint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
-    "lint:eslint:fix": "eslint --fix 'src/**/*.{js,jsx,ts,tsx}'",
-    "lint:prettier": "yarn prettier --check './**/*.{js,jsx,ts,tsx,css}'",
-    "lint:prettier:fix": "yarn prettier --write './**/*.{js,jsx,ts,tsx,css}'",
+    "lint": "pnpm lint:eslint && pnpm lint:prettier",
+    "lint:fix": "pnpm lint:eslint:fix && pnpm lint:prettier:fix",
+    "lint:eslint": "eslint 'src/**/*.{js,jsx,ts,tsx}' --config .eslintrc.js",
+    "lint:eslint:fix": "eslint --fix 'src/**/*.{js,jsx,ts,tsx}' --config .eslintrc.js",
+    "lint:prettier": "pnpm prettier --check './**/*.{js,jsx,ts,tsx,css}'",
+    "lint:prettier:fix": "pnpm prettier --write './**/*.{js,jsx,ts,tsx,css}'",
     "test": "jest"
   },
   "keywords": [
@@ -32,6 +32,7 @@
     "@babel/preset-env": "^7.23.9",
     "@babel/preset-react": "^7.23.3",
     "@types/jest": "^29.5.12",
+    "@types/node": "^20.11.19",
     "@types/react-test-renderer": "^18.0.7",
     "@typescript-eslint/eslint-plugin": "^7.0.1",
     "@typescript-eslint/parser": "^7.0.1",
