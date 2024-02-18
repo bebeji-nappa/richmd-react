@@ -1,8 +1,20 @@
-exports = {
+module.exports = {
   env: {
     browser: true,
-    es2021: true,
-    jest: true
+    es2015: true,
+    jest: true,
+  },
+  parser: "@typescript-eslint/parser",
+  parserOptions: {
+    parser: "@typescript-eslint/parser",
+    sourceType: "module",
+    ecmaVersion: 2015,
+    project: "./tsconfig.eslint.json",
+    ecmaFeatures: {
+      jsx: true,
+      modules: true,
+    },
+    tsconfigRootDir: __dirname,
   },
   extends: [
     "plugin:react/recommended",
@@ -10,19 +22,7 @@ exports = {
     "plugin:@typescript-eslint/recommended",
     "prettier",
   ],
-  parser: "@typescript-eslint/parser",
-  parserOptions: {
-    sourceType: "module",
-    ecmaVersion: 2021,
-    project: "./tsconfig.eslint.json",
-    ecmaFeatures: {
-      jsx: true,
-      modules: true
-    },
-    tsconfigRootDir: __dirname,
-  },
   plugins: ["@typescript-eslint", "react", "react-hooks"],
-  root: true,
   rules: {
     "@typescript-eslint/no-unused-vars": "off",
   },

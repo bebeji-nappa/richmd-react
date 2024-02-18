@@ -1,7 +1,8 @@
 {
   "compilerOptions": {
+    "rootDir": "./src",
     "sourceMap": true,
-    "target": "esnext",
+    "target": "es2015",
     "module": "commonjs",
     "jsx": "react",
     "strict": true,
@@ -10,11 +11,11 @@
     "allowSyntheticDefaultImports": true,
     "outDir": "./dist/",
     "lib": [
-      "ES2021",
+      "ES2015",
       "DOM"
     ],
   },
   "files": [
     "src/index.tsx"
-  ]
+  ],
 }
